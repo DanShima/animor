@@ -1,0 +1,1 @@
+/Users/danning/github/Animor/buildSrc/build/classes/kotlin/main/AndroidVersion.class:/Users/danning/github/Animor/buildSrc/build/classes/kotlin/main/Libs.class:/Users/danning/github/Animor/buildSrc/build/classes/kotlin/main/TestLibs.class:/Users/danning/github/Animor/buildSrc/build/classes/kotlin/main/Versions.class
