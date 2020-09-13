@@ -1,5 +1,5 @@
 plugins {
-    id("com.github.ben-manes.versions") version "0.29.0"
+    id("com.github.ben-manes.versions") version "0.31.0"
 }
 
 buildscript {
@@ -8,9 +8,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:${Versions.gradle}")
+        classpath("com.android.tools.build:gradle:4.0.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
-        classpath("com.github.ben-manes:gradle-versions-plugin:0.29.0")
+        classpath("com.github.ben-manes:gradle-versions-plugin:0.31.0")
     }
 }
 

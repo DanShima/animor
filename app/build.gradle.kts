@@ -42,6 +42,8 @@ dependencies {
     implementation(Libs.navigationFrag)
     implementation(Libs.lifeCycleExt)
     implementation(Libs.navigationUiKtx)
+    implementation(Libs.playCore)
+    implementation(Libs.playCoreKtx)
 
 
     androidTestImplementation(TestLibs.junitAndroid)
