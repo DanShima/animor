@@ -7,22 +7,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.danshima.animor.R
 import com.google.android.play.core.review.ReviewManagerFactory
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class NotificationsFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private val notificationsViewModel: NotificationsViewModel by activityViewModels()
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_notifications, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
@@ -36,7 +37,7 @@ class NotificationsFragment : Fragment() {
         inAppReview()
     }
 
-    fun inAppReview() {
+    private fun inAppReview() {
         val reviewManager = ReviewManagerFactory.create(requireActivity())
         val requestReviewFlow = reviewManager.requestReviewFlow()
         requestReviewFlow.addOnCompleteListener { request ->
@@ -49,7 +50,7 @@ class NotificationsFragment : Fragment() {
                     // matter the result, we continue our app flow.
                 }
             } else {
-                Log.d("Error: ", request.exception.toString())
+                Log.d("Error", "Error using in-app rating: ${request.exception.toString()}")
             }
         }
     }
