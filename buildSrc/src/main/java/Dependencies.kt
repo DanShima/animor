@@ -8,13 +8,13 @@ object AndroidVersion {
 
 object Versions {
     const val gradle = "4.2.0-alpha10"
-    const val kotlin = "1.4.0"
-    const val appcompat = "1.3.0-alpha02"
+    const val kotlin = "1.4.31"
+    const val appcompat = "1.3.0-beta01"
     const val junit = "4.13"
     const val nav = "2.3.0"
     const val coro = "1.3.3"
-    const val hilt = "2.28.3-alpha"
-    const val hiltExt = "1.0.0-alpha02"
+    const val hilt = "2.33-beta"
+    const val hiltExt = "1.0.0-alpha03"
     const val room = "2.2.2"
     const val retrofit = "2.6.2"
 }
@@ -22,15 +22,16 @@ object Versions {
 object Libs {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-    const val core = "androidx.core:core-ktx:1.5.0-alpha01"
+    const val core = "androidx.core:core-ktx:1.5.0-beta03"
 
-    const val material = "com.google.android.material:material:1.3.0-alpha02"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.0-beta1"
-    const val recyclerView = "androidx.recyclerview:recyclerview:1.1.0"
+    const val material = "com.google.android.material:material:1.4.0-alpha01"
+    const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.0-beta01"
+    const val recyclerView = "androidx.recyclerview:recyclerview:1.2.0-beta02"
     const val cardView = "androidx.cardview:cardview:1.0.0"
     const val viewPager = "androidx.viewpager2:viewpager2:1.0.0"
 
     const val navigation = "androidx.navigation:navigation-fragment:${Versions.nav}"
+    const val biometricLibrary = "androidx.biometric:biometric:1.1.0"
     const val navigationUi = "androidx.navigation:navigation-ui:${Versions.nav}"
     const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.nav}"
     const val navigationFrag = "androidx.navigation:navigation-fragment-ktx:${Versions.nav}"
@@ -53,8 +54,8 @@ object Libs {
     const val coroutineAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coro}"
     const val coroutinePlayService = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.3.9"
     //dagger
-    const val dagger = "com.google.dagger:dagger:2.24"
-    const val daggerCompiler = "com.google.dagger:dagger-compiler:2.24"
+    const val dagger = "com.google.dagger:dagger:2.33"
+    const val daggerCompiler = "com.google.dagger:dagger-compiler:2.33"
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
     // Hilt ViewModel extension

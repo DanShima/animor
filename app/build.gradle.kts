@@ -68,6 +68,7 @@ dependencies {
     implementation(Libs.logging)
     implementation(Libs.workRuntime)
 
+    implementation(Libs.biometricLibrary)
 
     androidTestImplementation(TestLibs.junitAndroid)
     androidTestImplementation(TestLibs.espresso)

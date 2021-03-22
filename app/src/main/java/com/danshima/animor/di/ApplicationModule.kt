@@ -8,7 +8,6 @@ import com.danshima.animor.network.MainApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.multibindings.IntoSet
 import okhttp3.Authenticator
 import okhttp3.Cache
@@ -21,7 +20,6 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Named
 import javax.inject.Singleton
 
-@InstallIn(ApplicationComponent::class)
 @Module
 class ApplicationModule {
 
